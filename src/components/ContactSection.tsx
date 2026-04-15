@@ -175,7 +175,7 @@ export default function ContactSection({ block }: ContactSectionProps) {
                 disabled={submitState === "submitting"}
                 whileHover={{ scale: submitState === "submitting" ? 1 : 1.02 }}
                 whileTap={{ scale: submitState === "submitting" ? 1 : 0.98 }}
-                className="w-full bg-coral-gradient text-coral-foreground py-3 rounded-xl font-semibold text-sm hover:opacity-90 transition-opacity glow-coral disabled:opacity-70 disabled:cursor-not-allowed"
+                className="w-full bg-primary text-primary-foreground py-3 rounded-xl font-semibold text-sm hover:bg-primary/90 transition-colors glow-coral disabled:opacity-70 disabled:cursor-not-allowed"
               >
                 {submitState === "submitting" ? "Sending..." : block.submitLabel}
               </motion.button>
@@ -184,7 +184,7 @@ export default function ContactSection({ block }: ContactSectionProps) {
             {feedbackMessage ? (
               <p
                 className={`mt-3 text-sm ${
-                  submitState === "success" ? "text-green-600" : "text-destructive"
+                  submitState === "success" ? "text-primary" : "text-destructive"
                 }`}
               >
                 {feedbackMessage}

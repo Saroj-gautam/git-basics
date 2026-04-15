@@ -66,7 +66,7 @@ export default function HeroSection({ block }: HeroSectionProps) {
           >
             <a
               href={block.primaryCta.href}
-              className="bg-coral-gradient text-coral-foreground px-7 py-3.5 rounded-xl font-semibold text-sm hover:opacity-90 hover:scale-105 transition-all duration-300 glow-coral"
+              className="bg-primary text-primary-foreground px-7 py-3.5 rounded-xl font-semibold text-sm hover:bg-primary/90 hover:scale-105 transition-all duration-300 glow-coral"
             >
               {block.primaryCta.label}
             </a>

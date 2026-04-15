@@ -51,7 +51,7 @@ export default function Navbar({ nav }: NavbarProps) {
               transition={{ delay: 0.6 }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-coral-gradient text-coral-foreground px-5 py-2 rounded-xl text-sm font-semibold hover:opacity-90 transition-opacity glow-coral-sm"
+              className="bg-primary text-primary-foreground px-5 py-2 rounded-xl text-sm font-semibold hover:bg-primary/90 transition-colors glow-coral-sm"
             >
               {nav.cta.label}
             </motion.a>
@@ -106,7 +106,7 @@ export default function Navbar({ nav }: NavbarProps) {
                 <a
                   href={nav.cta.href}
                   onClick={() => setOpen(false)}
-                  className="bg-coral-gradient text-coral-foreground px-5 py-2 rounded-xl text-sm font-semibold text-center hover:opacity-90 transition-opacity"
+                  className="bg-primary text-primary-foreground px-5 py-2 rounded-xl text-sm font-semibold text-center hover:bg-primary/90 transition-colors"
                 >
                   {nav.cta.label}
                 </a>

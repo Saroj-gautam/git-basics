@@ -6,18 +6,12 @@ import {
   createRootRoute,
 } from "@tanstack/react-router";
 
-import { validatePortfolioConfig } from "@/content/portfolio";
+import { portfolioConfig } from "@/content/portfolio.config";
 
 import appCss from "../styles.css?url";
 
 function buildThemeStyle(): React.CSSProperties | undefined {
-  const parsed = validatePortfolioConfig();
-
-  if (!parsed.ok) {
-    return undefined;
-  }
-
-  const colors = parsed.data.theme?.colors;
+  const colors = portfolioConfig.theme?.colors;
   if (!colors) {
     return undefined;
   }

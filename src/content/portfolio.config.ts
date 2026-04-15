@@ -34,17 +34,16 @@ const socialLinks = {
   twitter: "https://twitter.com/sagun",
 };
 
+// Single source of truth for brand hue.
+// Change this one value to retheme all accent-driven UI parts.
+// Switched to a bluish-white direction per user request.
+const brandColor = "oklch(0.62 0.24 25)";
+const brandTextOnColor = "oklch(0.99 0.01 20)";
+
 const themeColors = {
-  background: "oklch(0.97 0.008 250)",
-  foreground: "oklch(0.22 0.05 255)",
-  primary: "oklch(0.28 0.1 255)",
-  "primary-foreground": "oklch(0.98 0.005 250)",
-  accent: "oklch(0.62 0.19 245)",
-  "accent-foreground": "oklch(1 0 0)",
-  coral: "oklch(0.62 0.19 245)",
-  "coral-foreground": "oklch(1 0 0)",
-  navy: "oklch(0.28 0.1 255)",
-  "navy-foreground": "oklch(0.98 0.005 250)",
+  // Keep overrides minimal: all other tokens are derived from these in styles.css.
+  brand: brandColor,
+  "brand-foreground": brandTextOnColor,
 } as const;
 
 export const portfolioConfig: PortfolioConfig = {
