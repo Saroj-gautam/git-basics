@@ -106,8 +106,8 @@ export const portfolioConfig: PortfolioConfig = {
         href: "#experience",
       },
       image: {
-        src: withBase("/images/hero-clipart.png"),
-        alt: "Developer illustration with modern software tooling icons",
+        src: withBase("/images/photo.png"),
+        alt: "ALT",
         width: 1024,
         height: 1024,
       },
