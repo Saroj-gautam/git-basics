@@ -20,7 +20,7 @@ const withBase = (path: string) => {
 
 // Quick-edit section: update these values first for most profile/theme changes.
 const profile = {
-  name: "Sagun",
+  name: "Saroj Gautam",
   role: "Full Stack Developer",
   location: "Nepal",
   email: "hello@sagun.dev",
